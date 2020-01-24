@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="logo_width">600dp</dimen>
+    <dimen name="logo_height">180dp</dimen>
+
+    <dimen name="view_width">990dp</dimen>
+
+    <dimen name="pri_button_width">750dp</dimen>
+    <dimen name="pri_button_height">390dp</dimen>
+
+    <dimen name="button_width">390dp</dimen>
+    <dimen name="button_height">390dp</dimen>
+
+    <dimen name="icon_size">120dp</dimen>
+
+    <dimen name="space_s">15dp</dimen>
+    <dimen name="space_m">30dp</dimen>
+    <dimen name="space_l">45dp</dimen>
+    <dimen name="locate_height">1860dp</dimen>
+
+
+</resources>
