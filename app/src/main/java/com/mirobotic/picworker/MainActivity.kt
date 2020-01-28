@@ -7,6 +7,7 @@ import com.mirobotic.picworker.fragments.*
 
 class MainActivity : AppCompatActivity(), OnActivityInteractionListener {
 
+
     companion object {
         const val SCREEN_ADAPTIVE = 0
         const val SCREEN_LOCATE_US = 1
