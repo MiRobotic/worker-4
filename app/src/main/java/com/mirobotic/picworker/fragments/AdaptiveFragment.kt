@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.mirobotic.picworker.MainActivity
 
 import com.mirobotic.picworker.R
 import kotlinx.android.synthetic.main.fragment_adaptive.*
@@ -45,7 +46,7 @@ class AdaptiveFragment : Fragment() {
         }
 
         btnNext.setOnClickListener {
-            onActivityInteractionListener.showNext()
+            onActivityInteractionListener.showContent(MainActivity.SCREEN_TECHNOLOGY)
         }
 
     }

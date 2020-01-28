@@ -14,6 +14,9 @@
     <dimen name="space_l">39dp</dimen>
     <dimen name="locate_height">1488dp</dimen>
 
+    <dimen name="vertical_padding">40dp</dimen>
+    <dimen name="horizontal_padding">40dp</dimen>
+
 <!--    <dimen name="logo_width">500dp</dimen>-->
 <!--    <dimen name="logo_height">150dp</dimen>-->
 

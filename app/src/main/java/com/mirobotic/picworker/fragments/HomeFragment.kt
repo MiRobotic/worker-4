@@ -10,6 +10,9 @@ import android.view.ViewGroup
 import com.mirobotic.picworker.MainActivity
 import com.mirobotic.picworker.MainActivity.Companion.SCREEN_ADAPTIVE
 import com.mirobotic.picworker.MainActivity.Companion.SCREEN_LOCATE_US
+import com.mirobotic.picworker.MainActivity.Companion.SCREEN_TECHNICAL
+import com.mirobotic.picworker.MainActivity.Companion.SCREEN_TECHNOLOGY
+import com.mirobotic.picworker.MainActivity.Companion.SCREEN_WORKER
 import com.mirobotic.picworker.R
 import kotlinx.android.synthetic.main.fragment_home.*
 
@@ -44,9 +47,20 @@ class HomeFragment : Fragment() {
         }
 
         btnLocateUs.setOnClickListener {
-            onActivityInteractionListener.showScreen(SCREEN_LOCATE_US)
+            onActivityInteractionListener.showContent(SCREEN_LOCATE_US)
         }
 
+        btnTechnical.setOnClickListener {
+            onActivityInteractionListener.showContent(SCREEN_TECHNICAL)
+        }
+
+        btnTechnology.setOnClickListener {
+            onActivityInteractionListener.showContent(SCREEN_TECHNOLOGY)
+        }
+
+        btnWorker.setOnClickListener {
+            onActivityInteractionListener.showScreen(SCREEN_WORKER)
+        }
     }
 
 }
