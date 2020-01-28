@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <dimen name="logo_width">480dp</dimen>
+    <dimen name="logo_width">720dp</dimen>
     <dimen name="logo_height">144dp</dimen>
     <dimen name="view_width">740dp</dimen>
     <dimen name="pri_button_width">600dp</dimen>
