@@ -56,15 +56,23 @@
 
     </RelativeLayout>
 
-
-    <ImageView
-        android:id="@+id/btnAdaptive"
-        android:src="@drawable/img_locate_us"
+    <ScrollView
         android:layout_below="@id/buttonView"
-        android:layout_margin="@dimen/space_m"
-        android:layout_alignParentStart="true"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/locate_height"/>
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btnAdaptive"
+            android:src="@drawable/img_locate_us"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:layout_margin="@dimen/space_m"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </ScrollView>
+
 
 
 

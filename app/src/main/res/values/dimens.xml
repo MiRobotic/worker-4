@@ -22,7 +22,7 @@
     <dimen name="space_s">5dp</dimen>
     <dimen name="space_m">10dp</dimen>
     <dimen name="space_l">16dp</dimen>
-    <dimen name="locate_height">620dp</dimen>
+    <dimen name="locate_height">220dp</dimen>
 
 
 
