@@ -32,6 +32,7 @@
 
     <RelativeLayout
         android:layout_below="@id/btnWorker"
+        android:layout_centerHorizontal="true"
         android:layout_width="@dimen/logo_width"
         android:layout_height="wrap_content" >
 
