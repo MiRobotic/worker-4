@@ -12,6 +12,9 @@ import android.widget.VideoView
 
 import com.mirobotic.picworker.R
 import kotlinx.android.synthetic.main.fragment_video_player.*
+import org.greenrobot.eventbus.EventBus
+import org.greenrobot.eventbus.Subscribe
+import org.greenrobot.eventbus.ThreadMode
 
 /**
  * A simple [Fragment] subclass.
@@ -36,20 +39,47 @@ class VideoPlayerFragment : Fragment() {
         videoPlayer.setOnPreparedListener {
 
             it.isLooping = true
-            it.setVolume(0f,0f)
+           // it.setVolume(0f,0f)
         }
+
+        videoPlayer.start()
 
     }
 
     override fun onResume() {
         super.onResume()
-        videoPlayer.start()
+
+        videoPlayer.resume()
+        EventBus.getDefault().register(this)
     }
 
     override fun onPause() {
         super.onPause()
         videoPlayer.pause()
+        EventBus.getDefault().unregister(this)
     }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    fun OnEvent(play: Boolean) {
+
+        if (play) {
+
+            if(!videoPlayer.isPlaying) {
+                videoPlayer.resume()
+            }
+
+        }else {
+
+
+            if (videoPlayer.isPlaying) {
+                videoPlayer.pause()
+            }
+
+        }
+
+    }
+
+
 
 
 }

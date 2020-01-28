@@ -4,6 +4,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.mirobotic.picworker.fragments.*
+import org.greenrobot.eventbus.EventBus
+import androidx.core.app.ComponentActivity.ExtraData
+import androidx.core.content.ContextCompat.getSystemService
+import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+
+
 
 class MainActivity : AppCompatActivity(), OnActivityInteractionListener {
 
@@ -41,6 +47,8 @@ class MainActivity : AppCompatActivity(), OnActivityInteractionListener {
 
         if (fragment != null) {
 
+            EventBus.getDefault().post(false)
+
             val ft = supportFragmentManager.beginTransaction()
             ft.add(R.id.fragmentContent, fragment, tag)
             ft.addToBackStack(tag)
@@ -66,6 +74,8 @@ class MainActivity : AppCompatActivity(), OnActivityInteractionListener {
         }
 
         if (fragment != null) {
+
+            EventBus.getDefault().post(true)
 
             val ft = supportFragmentManager.beginTransaction()
             ft.add(R.id.fragmentContent, fragment, tag)
