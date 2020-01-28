@@ -9,7 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 
 import com.mirobotic.picworker.R
-import kotlinx.android.synthetic.main.fragment_adaptive.*
+import com.mirobotic.picworker.MainActivity
+import kotlinx.android.synthetic.main.fragment_technology.*
 
 /**
  * A simple [Fragment] subclass.
@@ -29,7 +30,7 @@ class TechnologyFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_adaptive, container, false)
+        return inflater.inflate(R.layout.fragment_technology, container, false)
     }
 
 
@@ -45,7 +46,7 @@ class TechnologyFragment : Fragment() {
         }
 
         btnNext.setOnClickListener {
-            onActivityInteractionListener.showNext()
+            onActivityInteractionListener.showContent(MainActivity.SCREEN_TECHNICAL)
         }
 
     }

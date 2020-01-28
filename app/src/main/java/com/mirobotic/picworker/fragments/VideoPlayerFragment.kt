@@ -33,7 +33,7 @@ class VideoPlayerFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val uri = Uri.parse("android.resource://"+context?.packageName+"/"+R.raw.intro)
+        val uri = Uri.parse("android.resource://"+context?.packageName+"/"+R.raw.worker)
 
         videoPlayer.setVideoURI(uri)
         videoPlayer.setOnPreparedListener {

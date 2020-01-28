@@ -13,9 +13,13 @@ import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 
 class MainActivity : AppCompatActivity(), OnActivityInteractionListener {
 
+
     companion object {
-        const val SCREEN_ADAPTIVE = 0
-        const val SCREEN_LOCATE_US = 1
+        const val SCREEN_WORKER= 0
+        const val SCREEN_ADAPTIVE = 1
+        const val SCREEN_LOCATE_US = 2
+        const val SCREEN_TECHNOLOGY = 3
+        const val SCREEN_TECHNICAL = 4
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,9 +42,9 @@ class MainActivity : AppCompatActivity(), OnActivityInteractionListener {
 
         when (screen) {
 
-            SCREEN_LOCATE_US -> {
-                tag = LocateUsFragment::class.java.simpleName
-                fragment = LocateUsFragment()
+            SCREEN_WORKER -> {
+                tag = WorkerFragment::class.java.simpleName
+                fragment = WorkerFragment()
             }
 
         }
@@ -50,7 +54,7 @@ class MainActivity : AppCompatActivity(), OnActivityInteractionListener {
             EventBus.getDefault().post(false)
 
             val ft = supportFragmentManager.beginTransaction()
-            ft.add(R.id.fragmentContent, fragment, tag)
+            ft.add(R.id.fragmentMain, fragment, tag)
             ft.addToBackStack(tag)
             ft.commit()
 
@@ -69,6 +73,18 @@ class MainActivity : AppCompatActivity(), OnActivityInteractionListener {
             SCREEN_ADAPTIVE -> {
                 tag = AdaptiveFragment::class.java.simpleName
                 fragment = AdaptiveFragment()
+            }
+            SCREEN_LOCATE_US -> {
+                tag = LocateUsFragment::class.java.simpleName
+                fragment = LocateUsFragment()
+            }
+            SCREEN_TECHNICAL -> {
+                tag = TechnicalFragment::class.java.simpleName
+                fragment = TechnicalFragment()
+            }
+            SCREEN_TECHNOLOGY -> {
+                tag = TechnologyFragment::class.java.simpleName
+                fragment = TechnologyFragment()
             }
 
         }

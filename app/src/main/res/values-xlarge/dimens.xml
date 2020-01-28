@@ -11,8 +11,13 @@
     <dimen name="icon_size">96dp</dimen>
     <dimen name="space_s">12dp</dimen>
     <dimen name="space_m">24dp</dimen>
-    <dimen name="space_l">39dp</dimen>
+    <dimen name="space_l">42dp</dimen>
     <dimen name="locate_height">1488dp</dimen>
+
+    <dimen name="vertical_padding">40dp</dimen>
+    <dimen name="horizontal_padding">40dp</dimen>
+
+    <dimen name="home_margin">30dp</dimen>
 
 <!--    <dimen name="logo_width">500dp</dimen>-->
 <!--    <dimen name="logo_height">150dp</dimen>-->
