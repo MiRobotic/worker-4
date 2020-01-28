@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity(), OnActivityInteractionListener {
     }
 
 
+
+
     override fun showScreen(screen: Int) {
 
         var fragment: Fragment? = null
@@ -41,7 +43,7 @@ class MainActivity : AppCompatActivity(), OnActivityInteractionListener {
         if (fragment != null) {
 
             val ft = supportFragmentManager.beginTransaction()
-            ft.add(R.id.fragmentMain, fragment, tag)
+            ft.add(R.id.fragmentContent, fragment, tag)
             ft.addToBackStack(tag)
             ft.commit()
 
