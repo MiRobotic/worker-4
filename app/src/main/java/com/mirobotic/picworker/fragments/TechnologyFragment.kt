@@ -10,6 +10,7 @@ import android.view.ViewGroup
 
 import com.mirobotic.picworker.R
 import com.mirobotic.picworker.MainActivity
+import com.mirobotic.picworker.SkillDialog
 import kotlinx.android.synthetic.main.fragment_technology.*
 
 /**
@@ -48,6 +49,20 @@ class TechnologyFragment : Fragment() {
         btnNext.setOnClickListener {
             onActivityInteractionListener.showContent(MainActivity.SCREEN_TECHNICAL)
         }
+
+        viewSkill.setOnClickListener {
+            SkillDialog(context!!, "Skill Name", "This is skill description").show()
+        }
+
+        viewWorkSpace.setOnClickListener {
+            SkillDialog(context!!, "Skill Name", "This is skill description").show()
+        }
+
+        viewSkill.setOnClickListener {
+            SkillDialog(context!!, "Skill Name", "This is skill description").show()
+        }
+
+
 
     }
 

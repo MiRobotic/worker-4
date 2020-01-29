@@ -8,7 +8,7 @@ interface OnActivityInteractionListener {
 
     fun showBack()
 
-    fun showNext()
+    fun showWorker()
 
     fun showHome()
 

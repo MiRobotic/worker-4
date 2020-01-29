@@ -66,7 +66,73 @@
         android:layout_height="wrap_content"/>
 
 
+    <View
+        android:id="@+id/viewAgile"
 
+        android:layout_marginTop="@dimen/tch_view_top_margin"
+        android:layout_marginStart="@dimen/tch_view_item_start_margin"
+        android:background="@color/itemBg"
+        android:layout_width="@dimen/view_main_item_width"
+        android:layout_height="@dimen/view_item_height"/>
 
+    <View
+        android:id="@+id/viewCyberSecurity"
+        android:layout_below="@id/viewAgile"
+
+        android:layout_marginTop="@dimen/tch_view_item_top_margin"
+        android:layout_marginStart="@dimen/tch_view_item_start_margin"
+        android:background="@color/itemBg"
+        android:layout_width="@dimen/view_item_width"
+        android:layout_height="@dimen/view_item_height"/>
+
+    <View
+        android:id="@+id/viewDataProtection"
+        android:layout_below="@id/viewCyberSecurity"
+
+        android:layout_marginTop="@dimen/tch_view_item_top_margin"
+        android:layout_marginStart="@dimen/tch_view_item_start_margin"
+        android:background="@color/itemBg"
+        android:layout_width="@dimen/view_item_width"
+        android:layout_height="@dimen/view_item_height"/>
+
+    <View
+        android:id="@+id/viewFoundation"
+        android:layout_below="@id/viewDataProtection"
+
+        android:layout_marginTop="@dimen/tch_view_item_top_margin"
+        android:layout_marginStart="@dimen/tch_view_item_start_margin"
+        android:background="@color/itemBg"
+        android:layout_width="@dimen/view_item_width"
+        android:layout_height="@dimen/view_item_height"/>
+
+    <View
+        android:id="@+id/viewOracle"
+        android:layout_below="@id/viewFoundation"
+
+        android:layout_marginTop="@dimen/tch_view_item_top_margin"
+        android:layout_marginStart="@dimen/tch_view_item_start_margin"
+        android:background="@color/itemBg"
+        android:layout_width="@dimen/view_item_width"
+        android:layout_height="@dimen/view_item_height"/>
+
+    <View
+        android:id="@+id/viewWorkSpace"
+        android:layout_below="@id/viewOracle"
+
+        android:layout_marginTop="@dimen/tch_view_item_top_margin"
+        android:layout_marginStart="@dimen/tch_view_item_start_margin"
+        android:background="@color/itemBg"
+        android:layout_width="@dimen/view_item_width"
+        android:layout_height="@dimen/view_item_height"/>
+
+    <View
+        android:id="@+id/viewSecurity"
+        android:layout_below="@id/viewWorkSpace"
+
+        android:layout_marginTop="@dimen/tch_view_item_top_margin"
+        android:layout_marginStart="@dimen/tch_view_item_start_margin"
+        android:background="@color/itemBg"
+        android:layout_width="@dimen/view_item_width"
+        android:layout_height="@dimen/view_item_height"/>
 
 </RelativeLayout>

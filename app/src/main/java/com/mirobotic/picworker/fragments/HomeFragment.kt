@@ -59,7 +59,7 @@ class HomeFragment : Fragment() {
         }
 
         btnWorker.setOnClickListener {
-            onActivityInteractionListener.showScreen(SCREEN_WORKER)
+            onActivityInteractionListener.showWorker()
         }
     }
 

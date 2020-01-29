@@ -17,6 +17,8 @@
     <dimen name="vertical_padding">40dp</dimen>
     <dimen name="horizontal_padding">40dp</dimen>
 
+    <dimen name="worker_margin">64dp</dimen>
+
     <dimen name="home_margin">60dp</dimen>
 
 <!--    <dimen name="logo_width">500dp</dimen>-->

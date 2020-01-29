@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="500dp"
+    android:layout_height="400dp"
+    android:background="#55A">
+
+    <ImageView
+        android:id="@+id/imgClose"
+        android:layout_margin="@dimen/space_s"
+        android:layout_alignParentEnd="true"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:layout_width="@dimen/space_l"
+        android:layout_height="@dimen/space_l"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:textSize="20sp"
+        android:text="Hello Word"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/space_s"
+        android:layout_marginStart="@dimen/space_s"
+        android:layout_toStartOf="@id/imgClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/tvMsg"
+        android:textSize="20sp"
+        android:layout_below="@id/tvTitle"
+        android:text="This is message"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/space_l"
+        android:layout_marginStart="@dimen/space_s"
+        android:layout_toStartOf="@id/imgClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

@@ -1,14 +1,11 @@
 package com.mirobotic.picworker
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.mirobotic.picworker.fragments.*
 import org.greenrobot.eventbus.EventBus
-import androidx.core.app.ComponentActivity.ExtraData
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
-
 
 
 class MainActivity : AppCompatActivity(), OnActivityInteractionListener {
@@ -31,9 +28,6 @@ class MainActivity : AppCompatActivity(), OnActivityInteractionListener {
         }
 
     }
-
-
-
 
     override fun showScreen(screen: Int) {
 
@@ -129,7 +123,9 @@ class MainActivity : AppCompatActivity(), OnActivityInteractionListener {
         onBackPressed()
     }
 
-    override fun showNext() {
-        onBackPressed()
+    override fun showWorker() {
+
+        startActivity(Intent(this, WorkerActivity::class.java))
+
     }
 }
