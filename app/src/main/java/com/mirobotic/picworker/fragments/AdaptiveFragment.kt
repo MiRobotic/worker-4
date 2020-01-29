@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.mirobotic.picworker.MainActivity
+import com.mirobotic.picworker.MainActivity.Companion.BACK
 
 import com.mirobotic.picworker.R
 import com.mirobotic.picworker.SkillDialog
@@ -47,7 +48,7 @@ class AdaptiveFragment : Fragment() {
         }
 
         btnBack.setOnClickListener {
-            onActivityInteractionListener.showBack()
+            onActivityInteractionListener.showBack(BACK)
         }
 
         btnNext.setOnClickListener {
