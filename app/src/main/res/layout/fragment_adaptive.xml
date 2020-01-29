@@ -65,6 +65,52 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    <View
+        android:id="@+id/viewLeadership"
+        android:layout_marginTop="@dimen/adaptive_view_top_margin"
+        android:layout_marginStart="@dimen/adaptive_item_start_margin"
+        android:background="@color/itemBg"
+        android:layout_width="@dimen/view_main_item_width"
+        android:layout_height="@dimen/view_item_height"/>
+
+    <View
+        android:id="@+id/viewBusinessExcellence"
+        android:layout_below="@id/viewLeadership"
+
+        android:layout_marginTop="@dimen/adaptive_item_top_margin"
+        android:layout_marginStart="@dimen/adaptive_item_start_margin"
+        android:background="@color/itemBg"
+        android:layout_width="@dimen/view_item_width"
+        android:layout_height="@dimen/view_item_height"/>
+
+    <View
+        android:id="@+id/viewPersonal"
+        android:layout_below="@id/viewBusinessExcellence"
+
+        android:layout_marginTop="@dimen/adaptive_item_top_margin"
+        android:layout_marginStart="@dimen/adaptive_item_start_margin"
+        android:background="@color/itemBg"
+        android:layout_width="@dimen/view_item_width"
+        android:layout_height="@dimen/view_item_height"/>
+
+    <View
+        android:id="@+id/viewCommunityCare"
+        android:layout_below="@id/viewPersonal"
+        android:layout_marginTop="@dimen/adaptive_item_top_margin"
+        android:layout_marginStart="@dimen/adaptive_item_start_margin"
+        android:background="@color/itemBg"
+        android:layout_width="@dimen/view_main_item_width"
+        android:layout_height="@dimen/view_item_height"/>
+
+    <View
+        android:id="@+id/viewCustomer"
+        android:layout_below="@id/viewCommunityCare"
+        android:layout_marginTop="@dimen/adaptive_item_top_margin"
+        android:layout_marginStart="@dimen/adaptive_item_start_margin"
+        android:background="@color/itemBg"
+        android:layout_width="@dimen/view_item_width"
+        android:layout_height="@dimen/view_item_height"/>
+
 
 
 

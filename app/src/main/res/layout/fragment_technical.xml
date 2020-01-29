@@ -68,7 +68,6 @@
 
     <View
         android:id="@+id/viewAgile"
-
         android:layout_marginTop="@dimen/tch_view_top_margin"
         android:layout_marginStart="@dimen/tch_view_item_start_margin"
         android:background="@color/itemBg"

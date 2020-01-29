@@ -10,7 +10,12 @@ import android.view.ViewGroup
 import com.mirobotic.picworker.MainActivity
 
 import com.mirobotic.picworker.R
+import com.mirobotic.picworker.SkillDialog
 import kotlinx.android.synthetic.main.fragment_adaptive.*
+import kotlinx.android.synthetic.main.fragment_adaptive.btnBack
+import kotlinx.android.synthetic.main.fragment_adaptive.btnHome
+import kotlinx.android.synthetic.main.fragment_adaptive.btnNext
+import kotlinx.android.synthetic.main.fragment_technology.*
 
 /**
  * A simple [Fragment] subclass.
@@ -47,6 +52,29 @@ class AdaptiveFragment : Fragment() {
 
         btnNext.setOnClickListener {
             onActivityInteractionListener.showContent(MainActivity.SCREEN_TECHNOLOGY)
+        }
+
+        viewLeadership.setOnClickListener {
+            SkillDialog(context!!, "Leadership Excellence", "Thank you for your interest!" +
+                    " Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
+        }
+
+        viewBusinessExcellence.setOnClickListener {
+            SkillDialog(context!!, "Business Excellence", "Thank you for your interest! " +
+                    "Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
+        }
+
+        viewPersonal.setOnClickListener {
+            SkillDialog(context!!, "Personal Effectiveness", "Thank you for your interest! " +
+                    "Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
+        }
+        viewCommunityCare.setOnClickListener {
+            SkillDialog(context!!, "Personal Effectiveness", "Thank you for your interest!" +
+                    " Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
+        }
+        viewCustomer.setOnClickListener {
+            SkillDialog(context!!, "Customer Excellence", "Thank you for your interest! " +
+                    "Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
         }
 
     }

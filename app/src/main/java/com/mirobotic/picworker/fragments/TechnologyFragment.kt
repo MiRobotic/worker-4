@@ -51,15 +51,15 @@ class TechnologyFragment : Fragment() {
         }
 
         viewSkill.setOnClickListener {
-            SkillDialog(context!!, "Skill Name", "This is skill description").show()
+            SkillDialog(context!!, "SkillsFuture for Digital Workplace(SFDW)", "Thank you for your interest!/" + "Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
         }
 
         viewWorkSpace.setOnClickListener {
-            SkillDialog(context!!, "Skill Name", "This is skill description").show()
+            SkillDialog(context!!, "Workplace IT Skills", "Thank you for your interest! Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
         }
 
-        viewSkill.setOnClickListener {
-            SkillDialog(context!!, "Skill Name", "This is skill description").show()
+        viewSilver.setOnClickListener {
+            SkillDialog(context!!, "Silver Digital Creators", "Thank you for your interest! Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
         }
 
 

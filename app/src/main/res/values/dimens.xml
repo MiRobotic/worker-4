@@ -27,6 +27,11 @@
 
     <dimen name="worker_margin">26dp</dimen>
 
+    <dimen name="adaptive_view_top_margin">980dp</dimen>
+    <dimen name="adaptive_item_top_margin">18dp</dimen>
+    <dimen name="adaptive_item_start_margin">180dp</dimen>
+
+
     <dimen name="tch_view_top_margin">895dp</dimen>
     <dimen name="tch_view_item_top_margin">7dp</dimen>
     <dimen name="tch_view_item_start_margin">120dp</dimen>
