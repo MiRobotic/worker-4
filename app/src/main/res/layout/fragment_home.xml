@@ -26,7 +26,7 @@
         android:layout_below="@id/imgLogo"
         android:layout_margin="@dimen/space_m"
         android:layout_centerHorizontal="true"
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/logo_width"
         android:layout_height="@dimen/pri_button_height"/>
 
 
@@ -34,6 +34,7 @@
         android:layout_below="@id/btnWorker"
         android:layout_centerHorizontal="true"
         android:layout_width="@dimen/logo_width"
+        android:layout_margin="@dimen/space_s"
         android:layout_height="wrap_content" >
 
 
