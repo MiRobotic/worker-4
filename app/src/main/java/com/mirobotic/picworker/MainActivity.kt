@@ -135,6 +135,7 @@ class MainActivity : AppCompatActivity(), OnActivityInteractionListener {
         }
 
         val fm = supportFragmentManager
+
         val fragmentPopped = fm.popBackStackImmediate(tag, 0)
 
         if (!fragmentPopped) {

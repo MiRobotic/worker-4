@@ -2,9 +2,8 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:minHeight="600dp"
     android:layout_width="600dp"
-    android:layout_height="wrap_content"
+    android:layout_height="600dp"
     android:background="#2e75b6">
 
     <ImageView
