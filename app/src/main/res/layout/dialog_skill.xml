@@ -2,7 +2,7 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:minHeight="450dp"
+    android:minHeight="600dp"
     android:layout_width="600dp"
     android:layout_height="wrap_content"
     android:background="#2e75b6">
@@ -15,31 +15,39 @@
         android:layout_width="@dimen/space_l"
         android:layout_height="@dimen/space_l"/>
 
-    <TextView
-        android:id="@+id/tvTitle"
-        android:textSize="30sp"
-        android:text="Hello Word"
-        android:gravity="center_horizontal"
-        android:textColor="@color/white"
-        android:layout_marginTop="@dimen/space_s"
-        android:layout_marginStart="@dimen/space_s"
-        android:layout_toStartOf="@id/imgClose"
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:textSize="33sp"
+            android:text="Hello Word"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/space_s"
+            android:layout_marginStart="@dimen/space_s"
+            android:layout_toStartOf="@id/imgClose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
 
-    <TextView
-        android:id="@+id/tvMsg"
-        android:textSize="25sp"
-        android:layout_below="@id/tvTitle"
-        android:text="This is message"
-        android:gravity="center_horizontal"
-        android:textColor="@color/white"
-        android:layout_marginTop="@dimen/space_l"
-        android:layout_marginStart="@dimen/space_s"
-        android:layout_toStartOf="@id/imgClose"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvMsg"
+            android:textSize="28sp"
+            android:layout_below="@id/tvTitle"
+            android:text="This is message"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/space_l"
+            android:layout_marginStart="@dimen/space_s"
+            android:layout_toStartOf="@id/imgClose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
 
 
 </RelativeLayout>
