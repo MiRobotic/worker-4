@@ -2,8 +2,8 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:minHeight="300dp"
-    android:layout_width="500dp"
+    android:minHeight="450dp"
+    android:layout_width="600dp"
     android:layout_height="wrap_content"
     android:background="#2e75b6">
 
@@ -17,7 +17,7 @@
 
     <TextView
         android:id="@+id/tvTitle"
-        android:textSize="22sp"
+        android:textSize="30sp"
         android:text="Hello Word"
         android:gravity="center_horizontal"
         android:textColor="@color/white"
@@ -30,7 +30,7 @@
 
     <TextView
         android:id="@+id/tvMsg"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:layout_below="@id/tvTitle"
         android:text="This is message"
         android:gravity="center_horizontal"
