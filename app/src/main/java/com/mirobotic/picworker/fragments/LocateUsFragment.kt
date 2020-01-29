@@ -45,9 +45,7 @@ class LocateUsFragment : Fragment() {
             onActivityInteractionListener.showBack()
         }
 
-        btnNext.setOnClickListener {
-            onActivityInteractionListener.showNext()
-        }
+
     }
 
 }
