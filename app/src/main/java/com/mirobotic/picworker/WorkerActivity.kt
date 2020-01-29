@@ -28,6 +28,10 @@ class WorkerActivity : AppCompatActivity() {
             //  it.setVolume(0f,0f)
         }
 
+        btnHome.setOnClickListener {
+            finish()
+        }
+
     }
 
 

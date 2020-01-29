@@ -55,25 +55,35 @@ class AdaptiveFragment : Fragment() {
         }
 
         viewLeadership.setOnClickListener {
-            SkillDialog(context!!, "Leadership Excellence", "Thank you for your interest!" +
-                    " Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
+            SkillDialog(context!!,
+                "\"Leadership Excellence\"",
+                "Thank you for your interest!" +
+                    "Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
         }
 
         viewBusinessExcellence.setOnClickListener {
-            SkillDialog(context!!, "Business Excellence", "Thank you for your interest! " +
+            SkillDialog(context!!,
+                "\"Business Excellence\"",
+                "Thank you for your interest! " +
                     "Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
         }
 
         viewPersonal.setOnClickListener {
-            SkillDialog(context!!, "Personal Effectiveness", "Thank you for your interest! " +
+            SkillDialog(context!!,
+                "\"Personal Effectiveness\"",
+                "Thank you for your interest! " +
                     "Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
         }
         viewCommunityCare.setOnClickListener {
-            SkillDialog(context!!, "Personal Effectiveness", "Thank you for your interest!" +
+            SkillDialog(context!!,
+                "\"Personal Effectiveness\"",
+                "Thank you for your interest!" +
                     " Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
         }
         viewCustomer.setOnClickListener {
-            SkillDialog(context!!, "Customer Excellence", "Thank you for your interest! " +
+            SkillDialog(context!!,
+                "\"Customer Excellence\"",
+                "Thank you for your interest! " +
                     "Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
         }
 
