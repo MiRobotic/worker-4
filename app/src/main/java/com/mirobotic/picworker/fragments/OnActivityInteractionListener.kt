@@ -6,7 +6,7 @@ interface OnActivityInteractionListener {
 
     fun showContent(screen: Int)
 
-    fun showBack()
+    fun showBack(screen: Int)
 
     fun showWorker()
 

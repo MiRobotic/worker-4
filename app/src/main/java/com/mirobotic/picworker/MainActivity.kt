@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity(), OnActivityInteractionListener {
 
 
     companion object {
+        const val BACK = 0
         const val SCREEN_WORKER= 0
         const val SCREEN_ADAPTIVE = 1
         const val SCREEN_LOCATE_US = 2
@@ -119,8 +120,27 @@ class MainActivity : AppCompatActivity(), OnActivityInteractionListener {
 
     }
 
-    override fun showBack() {
-        onBackPressed()
+    override fun showBack(screen: Int) {
+
+        if (screen == 0) {
+            onBackPressed()
+            return
+        }
+
+        val tag = when(screen) {
+            SCREEN_ADAPTIVE -> AdaptiveFragment::class.java.simpleName
+            SCREEN_TECHNOLOGY -> TechnologyFragment::class.java.simpleName
+            SCREEN_TECHNICAL -> TechnicalFragment::class.java.simpleName
+            else -> ""
+        }
+
+        val fm = supportFragmentManager
+        val fragmentPopped = fm.popBackStackImmediate(tag, 0)
+
+        if (!fragmentPopped) {
+            showContent(screen)
+        }
+
     }
 
     override fun showWorker() {

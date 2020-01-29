@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.mirobotic.picworker.MainActivity
+import com.mirobotic.picworker.MainActivity.Companion.SCREEN_TECHNOLOGY
 
 import com.mirobotic.picworker.R
 import com.mirobotic.picworker.SkillDialog
@@ -43,7 +44,7 @@ class TechnicalFragment : Fragment() {
         }
 
         btnBack.setOnClickListener {
-            onActivityInteractionListener.showBack()
+            onActivityInteractionListener.showBack(SCREEN_TECHNOLOGY)
         }
 
         btnNext.setOnClickListener {
