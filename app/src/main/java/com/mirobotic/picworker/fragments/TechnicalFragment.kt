@@ -55,43 +55,43 @@ class TechnicalFragment : Fragment() {
         viewAgile.setOnClickListener {
             SkillDialog(context!!,
                 "\"Agile, ITIL , Project Management & Business Analysis\"",
-                "Thank you for your interest! Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
+                "Thank you for your interest!\nApproach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
         }
 
         viewCyberSecurity.setOnClickListener {
             SkillDialog(context!!,
                 "\"Cybersecurity\"",
-                "Thank you for your interest! Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
+                "Thank you for your interest!\nApproach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
         }
 
         viewDataProtection.setOnClickListener {
             SkillDialog(context!!,
                 "\"Data Protection & Privacy\"",
-                "This is skill descriptionThank you for your interest! Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
+                "Thank you for your interest!\nApproach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
         }
 
         viewFoundation.setOnClickListener {
             SkillDialog(context!!,
                 "\"Foundational IT Courses\"",
-                "Thank you for your interest! Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
+                "Thank you for your interest!\nApproach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
         }
 
         viewOracle.setOnClickListener {
             SkillDialog(context!!,
                 "\"Oracle Business Applications\"",
-                "Thank you for your interest! Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
+                "Thank you for your interest!\nApproach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
         }
 
         viewWorkSpace.setOnClickListener {
             SkillDialog(context!!,
                 "\"Workplace Safety & Health\"",
-                "Thank you for your interest! Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
+                "Thank you for your interest!\nApproach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
         }
 
         viewSecurity.setOnClickListener {
             SkillDialog(context!!,
                 "\"Security\"",
-                "Thank you for your interest! Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
+                "Thank you for your interest!\nApproach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
         }
 
     }

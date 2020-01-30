@@ -55,19 +55,19 @@ class TechnologyFragment : Fragment() {
         viewSkill.setOnClickListener {
             SkillDialog(context!!,
                 "\"SkillsFuture for Digital Workplace(SFDW)\"",
-                "Thank you for your interest!/" + "Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
+                "Thank you for your interest!\n" + "Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
         }
 
         viewWorkSpace.setOnClickListener {
             SkillDialog(context!!,
                 "\"Workplace IT Skills\"",
-                "Thank you for your interest! Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
+                "Thank you for your interest!\nApproach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
         }
 
         viewSilver.setOnClickListener {
             SkillDialog(context!!,
                 "\"Silver Digital Creators\"",
-                "Thank you for your interest! Approach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
+                "Thank you for your interest!\nApproach our Course Consultant to enquire more on the course & redeem a special gift from us.").show()
         }
 
 
