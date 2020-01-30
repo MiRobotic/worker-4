@@ -25,7 +25,8 @@
             android:id="@+id/tvTitle"
             android:textSize="33sp"
             android:text="Hello Word"
-            android:padding="@dimen/space_s"
+            android:paddingStart="@dimen/space_s"
+            android:paddingEnd="@dimen/space_s"
             android:gravity="center_horizontal"
             android:textColor="@color/white"
             android:layout_marginTop="@dimen/space_s"
@@ -38,10 +39,11 @@
             android:textSize="28sp"
             android:layout_below="@id/tvTitle"
             android:text="This is message"
-            android:padding="@dimen/space_s"
+            android:paddingStart="@dimen/space_s"
+            android:paddingEnd="@dimen/space_s"
             android:gravity="center_horizontal"
             android:textColor="@color/white"
-            android:layout_marginTop="@dimen/space_l"
+            android:layout_marginTop="@dimen/space_m"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </LinearLayout>
