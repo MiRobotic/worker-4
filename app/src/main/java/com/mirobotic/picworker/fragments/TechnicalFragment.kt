@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.mirobotic.picworker.MainActivity
+import com.mirobotic.picworker.MainActivity.Companion.SCREEN_LOCATE_US
 import com.mirobotic.picworker.MainActivity.Companion.SCREEN_TECHNOLOGY
 
 import com.mirobotic.picworker.R
@@ -44,11 +45,11 @@ class TechnicalFragment : Fragment() {
         }
 
         btnBack.setOnClickListener {
-            onActivityInteractionListener.showBack(SCREEN_TECHNOLOGY)
+            onActivityInteractionListener.showContent(SCREEN_TECHNOLOGY)
         }
 
         btnNext.setOnClickListener {
-            onActivityInteractionListener.showContent(MainActivity.SCREEN_LOCATE_US)
+            onActivityInteractionListener.showContent(SCREEN_LOCATE_US)
         }
 
         viewAgile.setOnClickListener {

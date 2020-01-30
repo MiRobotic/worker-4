@@ -8,8 +8,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.mirobotic.picworker.MainActivity
-import com.mirobotic.picworker.MainActivity.Companion.BACK
 
 import com.mirobotic.picworker.R
 import kotlinx.android.synthetic.main.fragment_worker.*
@@ -43,13 +41,7 @@ class WorkerFragment : Fragment() {
             onActivityInteractionListener.showHome()
         }
 
-        btnBack.setOnClickListener {
-            onActivityInteractionListener.showBack(BACK)
-        }
 
-        btnNext.setOnClickListener {
-            onActivityInteractionListener.showContent(MainActivity.SCREEN_ADAPTIVE)
-        }
 
 
         val uri = Uri.parse("android.resource://"+context?.packageName+"/"+R.raw.intro)

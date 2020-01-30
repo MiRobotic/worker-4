@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import com.mirobotic.picworker.R
 import com.mirobotic.picworker.MainActivity
 import com.mirobotic.picworker.MainActivity.Companion.SCREEN_ADAPTIVE
+import com.mirobotic.picworker.MainActivity.Companion.SCREEN_TECHNICAL
 import com.mirobotic.picworker.SkillDialog
 import kotlinx.android.synthetic.main.fragment_technology.*
 
@@ -44,11 +45,11 @@ class TechnologyFragment : Fragment() {
         }
 
         btnBack.setOnClickListener {
-            onActivityInteractionListener.showBack(SCREEN_ADAPTIVE)
+            onActivityInteractionListener.showContent(SCREEN_ADAPTIVE)
         }
 
         btnNext.setOnClickListener {
-            onActivityInteractionListener.showContent(MainActivity.SCREEN_TECHNICAL)
+            onActivityInteractionListener.showContent(SCREEN_TECHNICAL)
         }
 
         viewSkill.setOnClickListener {

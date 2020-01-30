@@ -43,7 +43,7 @@ class LocateUsFragment : Fragment() {
         }
 
         btnBack.setOnClickListener {
-            onActivityInteractionListener.showBack(SCREEN_TECHNICAL)
+            onActivityInteractionListener.showContent(SCREEN_TECHNICAL)
         }
 
 

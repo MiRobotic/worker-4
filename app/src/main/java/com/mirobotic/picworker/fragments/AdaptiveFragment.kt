@@ -8,7 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.mirobotic.picworker.MainActivity
-import com.mirobotic.picworker.MainActivity.Companion.BACK
+import com.mirobotic.picworker.MainActivity.Companion.SCREEN_HOME
+import com.mirobotic.picworker.MainActivity.Companion.SCREEN_TECHNOLOGY
 
 import com.mirobotic.picworker.R
 import com.mirobotic.picworker.SkillDialog
@@ -16,7 +17,6 @@ import kotlinx.android.synthetic.main.fragment_adaptive.*
 import kotlinx.android.synthetic.main.fragment_adaptive.btnBack
 import kotlinx.android.synthetic.main.fragment_adaptive.btnHome
 import kotlinx.android.synthetic.main.fragment_adaptive.btnNext
-import kotlinx.android.synthetic.main.fragment_technology.*
 
 /**
  * A simple [Fragment] subclass.
@@ -48,11 +48,11 @@ class AdaptiveFragment : Fragment() {
         }
 
         btnBack.setOnClickListener {
-            onActivityInteractionListener.showBack(BACK)
+            onActivityInteractionListener.showContent(SCREEN_HOME)
         }
 
         btnNext.setOnClickListener {
-            onActivityInteractionListener.showContent(MainActivity.SCREEN_TECHNOLOGY)
+            onActivityInteractionListener.showContent(SCREEN_TECHNOLOGY)
         }
 
         viewLeadership.setOnClickListener {

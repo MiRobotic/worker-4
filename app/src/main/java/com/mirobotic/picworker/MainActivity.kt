@@ -3,21 +3,20 @@ package com.mirobotic.picworker
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import com.mirobotic.picworker.fragments.*
-import org.greenrobot.eventbus.EventBus
 
 
 class MainActivity : AppCompatActivity(), OnActivityInteractionListener {
 
 
     companion object {
-        const val BACK = 0
-        const val SCREEN_WORKER= 0
-        const val SCREEN_ADAPTIVE = 1
-        const val SCREEN_LOCATE_US = 2
-        const val SCREEN_TECHNOLOGY = 3
-        const val SCREEN_TECHNICAL = 4
+        const val SCREEN_HOME = 1
+        const val SCREEN_ADAPTIVE = 2
+        const val SCREEN_LOCATE_US = 3
+        const val SCREEN_TECHNOLOGY = 4
+        const val SCREEN_TECHNICAL = 5
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,34 +29,6 @@ class MainActivity : AppCompatActivity(), OnActivityInteractionListener {
 
     }
 
-    override fun showScreen(screen: Int) {
-
-        var fragment: Fragment? = null
-        var tag = ""
-
-        when (screen) {
-
-            SCREEN_WORKER -> {
-                tag = WorkerFragment::class.java.simpleName
-                fragment = WorkerFragment()
-            }
-
-        }
-
-        if (fragment != null) {
-
-            EventBus.getDefault().post(false)
-
-            val ft = supportFragmentManager.beginTransaction()
-            ft.add(R.id.fragmentMain, fragment, tag)
-            ft.addToBackStack(tag)
-            ft.commit()
-
-        }
-
-
-    }
-
     override fun showContent(screen: Int) {
 
         var fragment: Fragment? = null
@@ -65,6 +36,10 @@ class MainActivity : AppCompatActivity(), OnActivityInteractionListener {
 
         when (screen) {
 
+            SCREEN_HOME -> {
+                tag = HomeFragment::class.java.simpleName
+                fragment = HomeFragment()
+            }
             SCREEN_ADAPTIVE -> {
                 tag = AdaptiveFragment::class.java.simpleName
                 fragment = AdaptiveFragment()
@@ -84,15 +59,12 @@ class MainActivity : AppCompatActivity(), OnActivityInteractionListener {
 
         }
 
+        Log.e("showContent","tag = $tag | $screen")
+
         if (fragment != null) {
-
-            EventBus.getDefault().post(true)
-
             val ft = supportFragmentManager.beginTransaction()
-            ft.add(R.id.fragmentContent, fragment, tag)
-            ft.addToBackStack(tag)
+            ft.replace(R.id.fragmentContent, fragment, tag)
             ft.commit()
-
         }
 
 
@@ -120,26 +92,32 @@ class MainActivity : AppCompatActivity(), OnActivityInteractionListener {
 
     }
 
-    override fun showBack(screen: Int) {
+    override fun onBackPressed() {
 
-        if (screen == 0) {
-            onBackPressed()
-            return
-        }
+        val fragment = supportFragmentManager.findFragmentById(R.id.fragmentContent)
 
-        val tag = when(screen) {
-            SCREEN_ADAPTIVE -> AdaptiveFragment::class.java.simpleName
-            SCREEN_TECHNOLOGY -> TechnologyFragment::class.java.simpleName
-            SCREEN_TECHNICAL -> TechnicalFragment::class.java.simpleName
-            else -> ""
-        }
+        if (fragment != null && fragment.tag != null) {
 
-        val fm = supportFragmentManager
+            when(fragment.tag) {
 
-        val fragmentPopped = fm.popBackStackImmediate(tag, 0)
+                HomeFragment::class.java.simpleName -> {
+                    super.onBackPressed()
+                }
+                AdaptiveFragment::class.java.simpleName -> {
+                    showContent(SCREEN_HOME)
+                }
+                TechnologyFragment::class.java.simpleName -> {
+                    showContent(SCREEN_ADAPTIVE)
+                }
+                TechnicalFragment::class.java.simpleName -> {
+                    showContent(SCREEN_TECHNOLOGY)
+                }
+                LocateUsFragment::class.java.simpleName -> {
+                    showContent(SCREEN_TECHNICAL)
+                }
+            }
 
-        if (!fragmentPopped) {
-            showContent(screen)
+
         }
 
     }
